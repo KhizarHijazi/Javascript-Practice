@@ -1,8 +1,9 @@
 //There are two data types : Primitive and Refrence(Non Primitive)
+//In JavaScript, memory is primarily divided into two regions: stack and heap memory.
 
 //Primitive : 7 types > String , Number , Boolean , undefined , bigint , symbol , null
 
-//When you copy or assign a primitive value to another variable, the value itself is copied, and both variables hold independent values.
+//Stack memory is used for storing primitive data types.When you copy or assign a primitive value to another variable, the value itself is copied, and both variables hold independent values.
 let a = 10;
 let b = a;  // b is now also 10
 a = 20;     // Changing 'a' does not affect 'b'
@@ -23,10 +24,12 @@ console.log(sym1 === sym2); // false
 
 
 // Refrence(Non Primitive) : Array , Object , Function
-//Reference: When you copy or assign a reference type, only the reference is copied, not the actual data. Both variables point to the same object, and changes to the object will affect both references.
+//Heap memory is used for storing reference data types. When you copy or assign a reference type, only the reference is copied, not the actual data. Both variables point to the same object, and changes to the object will affect both references.
 let obj1 = { name: "Alice" };
 let obj2 = obj1;  // obj2 points to the same object as obj1
 obj1.name = "Bob"; // Changes affect both obj1 and obj2
+
+
 
 
 let names = ["Khizar" , "Hijazi" , "Ali"]
